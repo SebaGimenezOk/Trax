@@ -3,8 +3,7 @@ import { colors } from '../../constants/colors'
 
 export default styles = StyleSheet.create({
     container: {
-        backgroundColor:colors.primario,
-        flex:1,
+        backgroundColor: colors.primario,
+        flex: 1,
     }
-
-}) 
+})

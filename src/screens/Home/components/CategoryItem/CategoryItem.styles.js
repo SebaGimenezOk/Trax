@@ -11,7 +11,7 @@ export default styles = StyleSheet.create({
         alignItems: 'center',
     },
     text: {
-        color:colors.secundario,
+        color:'white',
     }
 
 

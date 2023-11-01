@@ -4,9 +4,9 @@ import { Card } from '../../../../components'
 import styles from './CategoryItem.styles'
 
 
-export default function CategoryItem({ category }) {
+export default function CategoryItem({ category, navigation  }) {
     return (
-        <Pressable onPress={() => console.log(`esta es la categoria: ${category}`)}>
+        <Pressable onPress={() => navigation.navigate('Products',{category})}>
             <Card style={styles.cardContainer}>
                 <Text style={styles.text} >{category}</Text>
             </Card>
