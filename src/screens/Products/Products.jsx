@@ -21,7 +21,7 @@ const Products = ({ navigation, route }) => {
             const productsFiltered = allProducts.filter(product => product.title.includes(keyword))
             setArrProducts(productsFiltered)
         }
-    }, [category, keyword])
+    }, [category, keyword]);
 
     return (
         <View style={style.container}>
@@ -32,7 +32,8 @@ const Products = ({ navigation, route }) => {
                     data={arrProducts}
                     keyExtractor={item => item.id}
                     renderItem={({ item }) => (
-                        <TouchableOpacity onPress={() => navigation.navigate('Details', { product: item })}>
+                        <TouchableOpacity onPress={() =>
+                            navigation.navigate('Details', { product: item })}>
                             <Text>{item.title}</Text>
                         </TouchableOpacity>)} />
             </View>

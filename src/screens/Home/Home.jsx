@@ -1,15 +1,22 @@
 import { View, FlatList } from 'react-native'
-import React from 'react'
 import { Header } from '../../components'
 import styles from './Home.styles'
 import { CategoryItem } from './components'
 import dataCategories from '../../data/dataCategories'
 
 
+
 const Home = ({ navigation }) => {
+
+
+
     return (
         <View style={styles.container}>
-            <Header title={'CATEGORIAS'} />
+
+            <Header title={'MUSIC'} />
+
+
+
             <FlatList
                 data={dataCategories}
                 keyExtractor={category => category}

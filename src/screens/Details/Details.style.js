@@ -3,24 +3,31 @@ import { colors } from "../../constants/colors";
 
 export default styles = StyleSheet.create({
     container: {
-        backgroundColor: colors.white,
+
+    },
+    internalContainer: {
+        flexDirection: 'row',
+        justifyContent: "space-between",
+    },
+    secondContainer: {
+        alignContent: 'center',
+        backgroundColor: colors.primario,
         flex: 1,
-        alignItems: 'center',
         flexDirection: 'column',
+        alignItems: 'center',
         gap: 8,
-        paddingLeft:5,
-        paddingRight:6,
 
     },
     topContainer: {
         flex: 1,
         backgroundColor: colors.primario,
-        gap: 16,
+        justifyContent: 'center',
+
     },
 
     imageContainer: {
-        height: '50%',
-        width: '80%',
+        height: '100%',
+        width: '60%',
         borderRadius: 12,
 
     },
@@ -28,18 +35,18 @@ export default styles = StyleSheet.create({
     title: {
         fontSize: 18,
         fontWeight: 'bold',
-        fontFamily:'Poppins',
-        color:'white',
+        fontFamily: 'Poppins',
+        color: 'white',
     },
     price: {
         fontSize: 28,
         fontWeight: 'bold',
-        fontFamily:'Poppins',
-        color:'white',
+        fontFamily: 'Poppins',
+        color: 'white',
     },
     description: {
         fontSize: 14,
-        fontFamily:'PoppinsLight',
-        color:'white',
+        fontFamily: 'PoppinsLight',
+        color: 'white',
     }
 })

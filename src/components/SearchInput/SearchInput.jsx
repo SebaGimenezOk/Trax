@@ -4,7 +4,7 @@ import React, { useEffect, useState } from 'react'
 import AntDesign from '@expo/vector-icons/AntDesign'
 import styles from './SearchInput.style'
 
-const SearchInput = ({ onSearch }) => {
+const SearchInput = ({ onSearch}) => {
     const [value, setValue] = useState('')
 
     useEffect(() => {
