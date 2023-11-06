@@ -13,10 +13,8 @@ const Home = ({ navigation }) => {
     return (
         <View style={styles.container}>
 
-            <Header title={'MUSIC'} />
-
-
-
+            <Header title={'CATEGORY'} />
+            
             <FlatList
                 data={dataCategories}
                 keyExtractor={category => category}

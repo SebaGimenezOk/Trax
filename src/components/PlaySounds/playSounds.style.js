@@ -4,8 +4,8 @@ import { colors } from "../../constants/colors";
 export default styles = StyleSheet.create({
     container: {
  
-        backgroundColor:colors.secundario,
-        borderRadius:25,
+        backgroundColor:colors.tertiary,
+        borderRadius:50,
         alignItems:'center',
         justifyContent:'center',
         height:60,
@@ -16,7 +16,7 @@ export default styles = StyleSheet.create({
     },
     boton: {
         color: colors.primario,
-        gap: 4,
+   
 
     },
 

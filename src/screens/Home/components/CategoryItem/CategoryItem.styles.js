@@ -9,6 +9,10 @@ export default styles = StyleSheet.create({
         justifyContent: 'center',
         padding: 10,
         alignItems: 'center',
+        flexDirection:'row',
+        borderRadius:10,
+        gap:15,
+        
     },
     text: {
         color:'white',

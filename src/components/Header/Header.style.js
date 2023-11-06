@@ -3,19 +3,22 @@ import { colors } from "../../constants/colors";
 
 export default styles = StyleSheet.create({
     container: {
-        backgroundColor: colors.secundario,
-        height: 99,
-        paddingTop: 18,
+        backgroundColor: colors.tertiary,
+        height: 139,
+        paddingTop: 48,
         width: '100%',
         justifyContent: 'center',
         alignItems: 'center',
-    },
+        marginBottom:30,
+            },
     text: {
         fontSize: 25,
         fontFamily: 'PoppinsLightItalic',
+        color:'white',
     },
     imageContainer: {
-      
+       
         borderRadius: 12,
+
     }
 })

@@ -8,7 +8,7 @@ import PropTypes from 'prop-types';
 
 
 
-function PlaySounds({audioURL}) {
+function PlaySounds({ audioURL }) {
     const [sound, setSound] = useState(null);
     const [isPlaying, setIsPlaying] = useState(false);
     const [volume, setVolume] = useState(1);
@@ -51,15 +51,13 @@ function PlaySounds({audioURL}) {
 
     return (
         <View style={styles.container}>
-
-{/* 
-            <Text>estas escuchando: </Text> */}
             <Pressable title={isPlaying ? 'Pausa' : 'Reproducir'} onPress={togglePlayPause} />
-
+            
             <Pressable>
+
                 <AntDesign
                     name={isPlaying ? 'pausecircleo' : 'play'}
-                    size={25}
+                    size={30}
                     onPress={togglePlayPause}
                     style={styles.boton}
                 />

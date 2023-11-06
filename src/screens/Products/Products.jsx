@@ -28,13 +28,13 @@ const Products = ({ navigation, route }) => {
             <Header title={category} />
             <SearchInput onSearch={setKeyword} />
             <View style={style.listContainer}>
-                <FlatList
+                <FlatList 
                     data={arrProducts}
                     keyExtractor={item => item.id}
                     renderItem={({ item }) => (
                         <TouchableOpacity onPress={() =>
                             navigation.navigate('Details', { product: item })}>
-                            <Text>{item.title}</Text>
+                            <Text style={style.listas}>{item.title}</Text>
                         </TouchableOpacity>)} />
             </View>
         </View >

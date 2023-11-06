@@ -1,22 +1,22 @@
 
 export default [
     {
-        title: 'electronica',
+        title: 'ELECTRONICA', 
     },
     {
-        title: 'rock',
+        title: 'ROCK',
     },
     {
-        title: 'tango',
+        title: 'TANGO',
     },
     {
-        title: 'pop',
+        title: 'POP',
     },
     {
-        title: 'groceries',
+        title: 'CONTEMPORANEA',
     },
     {
-        title: 'home-decoration',
+        title: 'JAZZ',
     },
 
 ]
