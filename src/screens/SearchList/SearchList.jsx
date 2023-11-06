@@ -1,16 +1,14 @@
 import { View, Text, FlatList, TouchableOpacity } from 'react-native'
-import React, { useState, useEffect } from 'react'
+import React from 'react'
+import { useState, useEffect } from 'react'
 import allProducts from '../../data/products'
-import { Header } from '../../components'
-import style from './Products.style'
+import { SearchInput, Header } from '../../components'
+import style from './SearchList.style'
 import { useSelector } from 'react-redux'
 
 
 
-
-const Products = ({ navigation }) => {
-
-
+const SearchList = ({ navigation }) => {
     const category = useSelector(state => state.shop.categorySelected)
     const [arrProducts, setArrProducts] = useState([])
     const [keyword, setKeyword] = useState('')
@@ -26,13 +24,14 @@ const Products = ({ navigation }) => {
             const productsFiltered = allProducts.filter(product => product.title.includes(keyword))
             setArrProducts(productsFiltered)
         }
+
     }, [category, keyword]);
 
     return (
         <View style={style.container}>
-            <Header title={category} />
-
-            <View style={style.listContainer}>
+            <Header title={'SELECT YOU STATION'} />
+            <SearchInput onSearch={setKeyword} />
+            <View >
                 <FlatList
                     data={arrProducts}
                     keyExtractor={item => item.id}
@@ -46,4 +45,4 @@ const Products = ({ navigation }) => {
     )
 }
 
-export default Products
+export default SearchList

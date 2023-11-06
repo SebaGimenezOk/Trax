@@ -31,7 +31,7 @@ const SearchInput = ({ onSearch}) => {
             </Pressable>
 
             <Pressable onPress={clearInput}>
-                <AntDesign name="closecircleo" size={25} color={'white'} onPress={search} />
+                <AntDesign name="closecircleo" size={25} color={'white'} onPress={clearInput} />
             </Pressable>
 
         </View>

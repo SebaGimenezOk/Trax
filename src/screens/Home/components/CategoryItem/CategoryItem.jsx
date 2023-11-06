@@ -2,16 +2,24 @@ import { Pressable, Text, View } from 'react-native'
 import React from 'react'
 import { Card } from '../../../../components'
 import styles from './CategoryItem.styles'
-import AntDesign from '@expo/vector-icons/AntDesign'
+import { useDispatch } from 'react-redux'
+import { setCategorySelected } from '../../../../features/shop/shopSlice'
 
-export default function CategoryItem({ category, navigation }) {
+
+const CategoryItem = ({ category, navigation }) => {
+    const dispatch = useDispatch()
+
     return (
-        <Pressable onPress={() => navigation.navigate('Products', { category })}>
+        <Pressable onPress={() => {
+            dispatch(setCategorySelected(category))
+            navigation.navigate('Products', { category })
+        }}>
             <Card style={styles.cardContainer}>
-                {/* <AntDesign name="play" size={15} color={'white'} /> */}
+
                 <Text style={styles.text} >{category}</Text>
 
             </Card>
         </Pressable>
     )
 }
+export default CategoryItem

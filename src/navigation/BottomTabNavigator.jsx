@@ -2,8 +2,10 @@ import { createMaterialBottomTabNavigator } from '@react-navigation/material-bot
 import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
 import StackNavigator from './StackNavigator'
 import LoginNavigator from './LoginNavigator'
+import { SearchInput } from '../screens/ index';
 import { colors } from '../constants/colors'
-
+import SearchNavigator from './SearchNavigator';
+import AntDesign from '@expo/vector-icons/AntDesign'
 
 const BottomTab = createMaterialBottomTabNavigator()
 
@@ -12,22 +14,37 @@ function BottomTabNavigator() {
         <BottomTab.Navigator
             initialRouteName='Inicio'
             barStyle={{
-                backgroundColor: colors.tertiary, height:60,justifyContent:'center'
+                backgroundColor: colors.tertiary, height: 60, justifyContent: 'center'
             }}
             labeled={false}
             activeColor="#140821"
             inactiveColor="#140821"
             screenOptions={{
-                headerShown:false,
+                headerShown: false,
             }}
-           >
+        >
             <BottomTab.Screen
-             name="Inicio"
-              component={StackNavigator} 
-              options={{
-                tabBarIcon: ({ color }) => (
-                    <MaterialCommunityIcons name="home" color={color} size={30} />),
-            }} />
+                name="Inicio"
+                component={StackNavigator}
+                options={{
+                    tabBarIcon: ({ color }) => (
+                        <MaterialCommunityIcons name="home" color={color} size={30} />),
+                }} />
+
+            <BottomTab.Screen
+                name="Search"
+                component={SearchNavigator}
+                options={{
+                    tabBarIcon: ({ color }) => (
+                        <MaterialCommunityIcons name="boombox" color={color} size={30} />),
+                }} />
+
+
+
+
+
+
+
             <BottomTab.Screen name="Login" component={LoginNavigator} options={{
                 tabBarIcon: ({ color }) => (
                     <MaterialCommunityIcons name="account" color={color} size={30} />),

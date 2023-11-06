@@ -7,7 +7,7 @@ export default [
         images: ['https://static.mytuner.mobi/media/tvos_radios/8scHa5pfGj.jpg',
             'https://i.dummyjson.com/data/products/2/1.jpg'],
         url: "https://cdn.instream.audio/:9069/stream",
-        category: 'ELECTRONICA'
+        category: 'ELECTRONICA',
     },
     {
         id: 2,
@@ -17,7 +17,7 @@ export default [
         images: ['https://static.mytuner.mobi/media/tvos_radios/b942cecxy6wn.png',
             'https://i.dummyjson.com/data/products/2/1.jpg'],
         url: 'http://server.laradio.online:25223/live.mp3',
-        category: 'CONTEMPORANEA'
+        category: 'CONTEMPORANEA',
 
     },
     {
@@ -40,7 +40,7 @@ export default [
         images: ['https://static.mytuner.mobi/media/tvos_radios/pg3xzk6yjmjr.jpg',
             'https://i.dummyjson.com/data/products/2/1.jpg'],
         url: 'https://media.radios.ar:9270/',
-        category: 'TANGO'
+        category: 'TANGO',
 
     },
     {
@@ -51,7 +51,7 @@ export default [
         images: ['https://www.enlaradio.com.ar/wp-content/uploads/2023/02/elr_aspen-1024x576.jpg',
             'https://i.dummyjson.com/data/products/2/1.jpg'],
         url: 'https://us-b4-p-e-zs14-audio.cdn.mdstrm.com/live-audio-aw-bkp/60a2745ff943100826374a70',
-        category: 'POP'
+        category: 'POP',
 
     },
     {
@@ -62,7 +62,7 @@ export default [
         images: ['https://static.mytuner.mobi/media/tvos_radios/qtPqwNwvkK.jpg',
             'https://i.dummyjson.com/data/products/2/1.jpg'],
         url: 'https://d25j5qm9y8ulag.cloudfront.net/954/95882dabc86c4ace49af17f449344ef4/95882dabc86c4ace49af17f449344ef4_194882080.aac',
-        category: 'JAZZ'
+        category: 'JAZZ',
 
     },
 ]

@@ -10,9 +10,10 @@ export default styles = StyleSheet.create({
         justifyContent: 'center',
         alignItems: 'center',
         marginBottom:30,
+      
             },
     text: {
-        fontSize: 25,
+        fontSize: 17,
         fontFamily: 'PoppinsLightItalic',
         color:'white',
     },
@@ -20,5 +21,14 @@ export default styles = StyleSheet.create({
        
         borderRadius: 12,
 
+    },
+    marca:{
+        fontSize: 25,
+        fontFamily: 'PoppinsBoldItalic',
+        color:'white',
+    },
+    logo:{
+        flexDirection:"row",
+         gap:10,
     }
 })

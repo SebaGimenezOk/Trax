@@ -14,13 +14,15 @@ export default styles = StyleSheet.create({
         marginLeft:7,
     },
     input:{
-        
+        fontFamily: 'PoppinsSemiBoldItalic',
         backgroundColor:'white',
         borderRadius:8,
         padding:10,
         width:'90%',
         fontSize:20,
-    }
+    
+    },
+    
 
 
 })
