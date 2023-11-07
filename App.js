@@ -5,7 +5,7 @@ import { Home } from "./src/screens/ index"
 import { NavigationContainer } from '@react-navigation/native'
 import BottomTabNavigator from "./src/navigation/BottomTabNavigator";
 import { Provider } from "react-redux";
-import { store } from './src/store'
+import store  from './src/store'
 
 
 export default function App() {
