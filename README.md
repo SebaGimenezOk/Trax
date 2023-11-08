@@ -39,13 +39,13 @@ npm -v
 1. Clona este repositorio en tu máquina local:
 
 ```bash
-git clone https://github.com/tu-usuario/radio-player-app.git
+git clone https://github.com/SebaGimenezOk/Trax.git
 ```
 
 2. Navega al directorio del proyecto:
 
 ```bash
-cd radio-player-app
+cd trax
 ```
 
 3. Instala las dependencias utilizando npm:
