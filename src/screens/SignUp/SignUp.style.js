@@ -54,7 +54,6 @@ export default styles = StyleSheet.create({
         borderRadius: 12,
     },
     imageContainer: {
-
         borderRadius: 12,
 
     },
