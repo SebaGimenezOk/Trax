@@ -4,9 +4,10 @@ import sytles from './SignUp.style'
 import { TextInput } from 'react-native-paper'
 import { useSignUpMutation } from '../../services/authApi'
 import { useDispatch } from 'react-redux'
+import { setUser } from '../../features/auth/authSlice'
 
 
-const SignUp = () => {
+const SignUp = ({navigation}) => {
     const [email, setEmail] = useState('')
     const [password, setPassword] = useState('')
     const [confirmPass, setConfirmPass] = useState('')
@@ -15,13 +16,14 @@ const SignUp = () => {
 
 
     const onSubmit = () => {
-        console.log(email, password, confirmPass);
         triggerSignUp({
             email,
             password,
             confirmPass
         })
-        console.log(result);
+        if (result.isSuccess) {
+            dispatch(setUser(result))
+        }
     }
 
 
@@ -35,12 +37,28 @@ const SignUp = () => {
                     <Text style={sytles.marca}>TRAX</Text>
                 </View>
                 <Text style={sytles.text}>Sign Up  to Start!</Text>
-                <TextInput style={sytles.inputEmail} placeholder='email' value={email} onChangeText={setEmail} />
-                <TextInput style={sytles.inputEmail} placeholder='password' value={password} onChangeText={setPassword} />
-                <TextInput style={sytles.inputEmail} placeholder='password' value={confirmPass} onChangeText={setConfirmPass} />
+             
+                <TextInput 
+                style={sytles.inputEmail} 
+                 placeholder='email' value={email} onChangeText={setEmail} />
+              
+                <TextInput 
+                style={sytles.inputEmail}
+                placeholder='password' value={password} onChangeText={setPassword} />
+              
+                <TextInput style={sytles.inputEmail} 
+                placeholder='password' value={confirmPass} onChangeText={setConfirmPass} />
+             
                 <Pressable style={sytles.loginButton} onPress={onSubmit} >
                     <Text style={sytles.text2}>Sign Up</Text>
                 </Pressable>
+
+                <Text style={sytles.text3}>Si ya tienes cuenta, avanti!!</Text>
+                <Pressable style={sytles.loginButton} onPress={()=> navigation.navigate('Login')}>
+                    <Text style={sytles.text2}>Log In</Text>
+                </Pressable>
+
+
             </View>
         </View>
     )

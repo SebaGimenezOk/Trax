@@ -19,7 +19,7 @@ export default styles = StyleSheet.create({
     },
     inputEmail: {
         width: '95%',
-        backgroundColor: colors.tertiary,
+
         borderRadius: 12,
         height: 30,
         marginVertical: 15,

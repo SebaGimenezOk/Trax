@@ -2,10 +2,12 @@ import { createMaterialBottomTabNavigator } from '@react-navigation/material-bot
 import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
 import StackNavigator from './StackNavigator'
 import LoginNavigator from './LoginNavigator'
-import { SearchInput } from '../screens/ index';
+import { Profile, SearchInput } from '../screens/ index';
 import { colors } from '../constants/colors'
 import SearchNavigator from './SearchNavigator';
 import AntDesign from '@expo/vector-icons/AntDesign'
+import ProfileNavigator from './ProfileNavigator';
+
 
 const BottomTab = createMaterialBottomTabNavigator()
 
@@ -39,16 +41,16 @@ function BottomTabNavigator() {
                         <MaterialCommunityIcons name="boombox" color={color} size={30} />),
                 }} />
 
+            <BottomTab.Screen
+                name="Profile"
+                component={ProfileNavigator}
+                options={{
+                    tabBarIcon: ({ color }) => (
+                        <MaterialCommunityIcons name="alien" color={color} size={30} />),
+                }} />
 
 
 
-
-
-
-            <BottomTab.Screen name="Login" component={LoginNavigator} options={{
-                tabBarIcon: ({ color }) => (
-                    <MaterialCommunityIcons name="account" color={color} size={30} />),
-            }} />
         </BottomTab.Navigator>
     )
 }

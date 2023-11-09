@@ -16,15 +16,14 @@ export default styles = StyleSheet.create({
         alignItems: 'center',
         paddingVertical: 28,
         borderRadius: 20,
+
     },
     inputEmail: {
         width: '95%',
-        backgroundColor: colors.tertiary,
+       
         borderRadius: 12,
         height: 30,
         marginVertical: 15,
-
-
     },
     text: {
         fontFamily: 'PoppinsLight',
@@ -45,6 +44,8 @@ export default styles = StyleSheet.create({
         marginVertical: 18,
         fontSize: 14,
     },
+  
+
     loginButton: {
         backgroundColor: colors.primario,
         width: '50%',
